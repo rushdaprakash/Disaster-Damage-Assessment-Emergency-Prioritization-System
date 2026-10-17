@@ -1,0 +1,706 @@
+{
+  "reports": {
+    "REP-1001": {
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "location_name": "Anna Salai Bridge, Chennai Central",
+      "media_type": "video",
+      "media_path": "/uploads/sample_video_flood.mp4",
+      "description": "30-second field video showing submerged vehicles and bridge structural cracking near Anna Salai.",
+      "disaster_type": "flood",
+      "id": "REP-1001",
+      "timestamp": "2026-09-12T15:25:49.983120",
+      "incident_id": null
+    },
+    "REP-1002": {
+      "latitude": 13.0835,
+      "longitude": 80.2715,
+      "location_name": "Anna Salai Bridge, Chennai Central",
+      "media_type": "image",
+      "media_path": "/uploads/sample_image_bridge.jpg",
+      "description": "High-resolution image of submerged cars and cracked bridge pillar.",
+      "disaster_type": "flood",
+      "id": "REP-1002",
+      "timestamp": "2026-09-12T15:40:49.983120",
+      "incident_id": null
+    },
+    "REP-1003": {
+      "latitude": 13.082,
+      "longitude": 80.2698,
+      "location_name": "Anna Salai Bridge, Chennai Central",
+      "media_type": "audio",
+      "media_path": "/uploads/sample_audio_report.mp3",
+      "description": "Voice recording from field officer reporting trapped citizens and impassable road.",
+      "disaster_type": "flood",
+      "id": "REP-1003",
+      "timestamp": "2026-09-12T15:55:49.983120",
+      "incident_id": null
+    },
+    "REP-2001": {
+      "latitude": 13.04,
+      "longitude": 80.2333,
+      "location_name": "T. Nagar Commercial & Residential Hub",
+      "media_type": "image",
+      "media_path": "/uploads/sample_tnagar_flood.jpg",
+      "description": "Flooded street with waist-deep water and fallen electric power poles.",
+      "disaster_type": "flood",
+      "id": "REP-2001",
+      "timestamp": "2026-09-12T14:10:49.983120",
+      "incident_id": null
+    },
+    "REP-2002": {
+      "latitude": 13.0412,
+      "longitude": 80.2345,
+      "location_name": "T. Nagar Commercial & Residential Hub",
+      "media_type": "video",
+      "media_path": "/uploads/sample_tnagar_video.mp4",
+      "description": "Video of rising water level affecting ground floor shops.",
+      "disaster_type": "flood",
+      "id": "REP-2002",
+      "timestamp": "2026-09-12T14:30:49.983120",
+      "incident_id": null
+    },
+    "REP-3001": {
+      "latitude": 13.0067,
+      "longitude": 80.2578,
+      "location_name": "Adyar River Bridge Approach",
+      "media_type": "image",
+      "media_path": "/uploads/sample_adyar.jpg",
+      "description": "Knee-deep water on main road, 2 stalled hatchback cars.",
+      "disaster_type": "flood",
+      "id": "REP-3001",
+      "timestamp": "2026-09-12T13:10:49.983120",
+      "incident_id": null
+    },
+    "REP-4001": {
+      "latitude": 13.12,
+      "longitude": 80.21,
+      "location_name": "Madhavaram Canal Link Road",
+      "media_type": "image",
+      "media_path": "/uploads/sample_madhavaram.jpg",
+      "description": "Minor canal overflow on sidewalk, main road traffic flowing slowly.",
+      "disaster_type": "flood",
+      "id": "REP-4001",
+      "timestamp": "2026-09-12T12:10:49.983120",
+      "incident_id": null
+    },
+    "REP-172FC8": {
+      "latitude": 13.0827,
+      "longitude": 80.2707,
+      "location_name": "Anna Salai Bridge, Chennai",
+      "media_type": "image",
+      "media_path": "/uploads/REP-172FC8.png",
+      "description": "",
+      "disaster_type": "flood",
+      "id": "REP-172FC8",
+      "timestamp": "2026-09-12T16:15:01.028779",
+      "incident_id": null
+    }
+  },
+  "assessments": {
+    "ASM-1001": {
+      "id": "ASM-1001",
+      "report_id": "REP-1001",
+      "damage_type": "FLOOD_AND_INFRASTRUCTURE",
+      "severity_level": "CRITICAL",
+      "severity_score": 88.5,
+      "confidence": 92.0,
+      "water_level_pct": 85.0,
+      "road_blockage_pct": 92.0,
+      "vehicle_count": 6,
+      "person_count": 4,
+      "infrastructure_damage_score": 85.0,
+      "modality_scores": [
+        {
+          "modality": "video",
+          "score": 88.5,
+          "confidence": 92.0,
+          "details": {
+            "fps": 2,
+            "keyframes": 60
+          }
+        }
+      ],
+      "video_timeline": [
+        {
+          "start_sec": 0.0,
+          "end_sec": 30.0,
+          "event_type": "flood_water",
+          "confidence": 0.95
+        },
+        {
+          "start_sec": 2.0,
+          "end_sec": 26.0,
+          "event_type": "vehicle_obstruction",
+          "confidence": 0.88
+        },
+        {
+          "start_sec": 6.0,
+          "end_sec": 30.0,
+          "event_type": "road_blockage",
+          "confidence": 0.92
+        },
+        {
+          "start_sec": 10.0,
+          "end_sec": 28.0,
+          "event_type": "infrastructure_damage",
+          "confidence": 0.86
+        },
+        {
+          "start_sec": 4.0,
+          "end_sec": 18.0,
+          "event_type": "person_detected",
+          "confidence": 0.79
+        }
+      ],
+      "transcription": null,
+      "extracted_entities": {}
+    },
+    "ASM-1002": {
+      "id": "ASM-1002",
+      "report_id": "REP-1002",
+      "damage_type": "STRUCTURAL_COLLAPSE",
+      "severity_level": "SEVERE",
+      "severity_score": 84.0,
+      "confidence": 91.0,
+      "water_level_pct": 80.0,
+      "road_blockage_pct": 88.0,
+      "vehicle_count": 4,
+      "person_count": 2,
+      "infrastructure_damage_score": 88.0,
+      "modality_scores": [
+        {
+          "modality": "image",
+          "score": 84.0,
+          "confidence": 91.0,
+          "details": {
+            "resolution": "1920x1080"
+          }
+        }
+      ],
+      "video_timeline": [],
+      "transcription": null,
+      "extracted_entities": {}
+    },
+    "ASM-1003": {
+      "id": "ASM-1003",
+      "report_id": "REP-1003",
+      "damage_type": "BRIDGE_COLLAPSE",
+      "severity_level": "CRITICAL",
+      "severity_score": 90.0,
+      "confidence": 84.0,
+      "water_level_pct": 85.0,
+      "road_blockage_pct": 95.0,
+      "vehicle_count": 5,
+      "person_count": 4,
+      "infrastructure_damage_score": 92.0,
+      "modality_scores": [
+        {
+          "modality": "audio",
+          "score": 90.0,
+          "confidence": 84.0,
+          "details": {
+            "stt_engine": "Whisper-v3"
+          }
+        }
+      ],
+      "video_timeline": [],
+      "transcription": "The main bridge near Anna Salai is cracking under heavy flood waters. Road is completely blocked. At least 6 vehicles are stranded and 4 people are trapped on top of cars.",
+      "extracted_entities": {
+        "event_type": "BRIDGE_COLLAPSE",
+        "road_status": "BLOCKED",
+        "location_hint": "Anna Salai Bridge",
+        "stranded_people": 4,
+        "stranded_vehicles": 6,
+        "urgency": "CRITICAL"
+      }
+    },
+    "ASM-2001": {
+      "id": "ASM-2001",
+      "report_id": "REP-2001",
+      "damage_type": "FLOOD_WATER",
+      "severity_level": "SEVERE",
+      "severity_score": 72.0,
+      "confidence": 89.0,
+      "water_level_pct": 68.0,
+      "road_blockage_pct": 78.0,
+      "vehicle_count": 3,
+      "person_count": 2,
+      "infrastructure_damage_score": 65.0,
+      "modality_scores": [
+        {
+          "modality": "image",
+          "score": 72.0,
+          "confidence": 89.0,
+          "details": {
+            "resolution": "1280x720"
+          }
+        }
+      ],
+      "video_timeline": [],
+      "transcription": null,
+      "extracted_entities": {}
+    },
+    "ASM-2002": {
+      "id": "ASM-2002",
+      "report_id": "REP-2002",
+      "damage_type": "FLOOD_WATER",
+      "severity_level": "SEVERE",
+      "severity_score": 70.5,
+      "confidence": 86.0,
+      "water_level_pct": 64.0,
+      "road_blockage_pct": 74.0,
+      "vehicle_count": 2,
+      "person_count": 1,
+      "infrastructure_damage_score": 60.0,
+      "modality_scores": [
+        {
+          "modality": "video",
+          "score": 70.5,
+          "confidence": 86.0,
+          "details": {
+            "duration": 15
+          }
+        }
+      ],
+      "video_timeline": [
+        {
+          "start_sec": 0.0,
+          "end_sec": 15.0,
+          "event_type": "flood_water",
+          "confidence": 0.9
+        },
+        {
+          "start_sec": 3.0,
+          "end_sec": 12.0,
+          "event_type": "road_blockage",
+          "confidence": 0.82
+        }
+      ],
+      "transcription": null,
+      "extracted_entities": {}
+    },
+    "ASM-3001": {
+      "id": "ASM-3001",
+      "report_id": "REP-3001",
+      "damage_type": "FLOOD_WATER",
+      "severity_level": "MODERATE",
+      "severity_score": 52.0,
+      "confidence": 87.0,
+      "water_level_pct": 45.0,
+      "road_blockage_pct": 50.0,
+      "vehicle_count": 2,
+      "person_count": 0,
+      "infrastructure_damage_score": 35.0,
+      "modality_scores": [
+        {
+          "modality": "image",
+          "score": 52.0,
+          "confidence": 87.0,
+          "details": {
+            "resolution": "1920x1080"
+          }
+        }
+      ],
+      "video_timeline": [],
+      "transcription": null,
+      "extracted_entities": {}
+    },
+    "ASM-4001": {
+      "id": "ASM-4001",
+      "report_id": "REP-4001",
+      "damage_type": "FLOOD_WATER",
+      "severity_level": "LOW",
+      "severity_score": 28.5,
+      "confidence": 85.0,
+      "water_level_pct": 25.0,
+      "road_blockage_pct": 20.0,
+      "vehicle_count": 0,
+      "person_count": 0,
+      "infrastructure_damage_score": 15.0,
+      "modality_scores": [
+        {
+          "modality": "image",
+          "score": 28.5,
+          "confidence": 85.0,
+          "details": {
+            "resolution": "1280x720"
+          }
+        }
+      ],
+      "video_timeline": [],
+      "transcription": null,
+      "extracted_entities": {}
+    },
+    "ASM-A837D7": {
+      "id": "ASM-A837D7",
+      "report_id": "REP-172FC8",
+      "damage_type": "FLOOD_AND_INFRASTRUCTURE",
+      "severity_level": "SEVERE",
+      "severity_score": 78.5,
+      "confidence": 89.0,
+      "water_level_pct": 65.0,
+      "road_blockage_pct": 80.0,
+      "vehicle_count": 4,
+      "person_count": 2,
+      "infrastructure_damage_score": 70.0,
+      "modality_scores": [
+        {
+          "modality": "image",
+          "score": 78.5,
+          "confidence": 89.0,
+          "details": {
+            "building_damage": "MODERATE",
+            "roof_damage": "NONE",
+            "submerged_vehicles": true,
+            "fallen_trees_poles": true
+          }
+        }
+      ],
+      "video_timeline": [],
+      "transcription": null,
+      "extracted_entities": {}
+    }
+  },
+  "incidents": {
+    "INC-0001": {
+      "id": "INC-0001",
+      "title": "Flood Incident at Anna Salai Bridge, Chennai Central",
+      "latitude": 13.08272,
+      "longitude": 80.27068,
+      "location_name": "Anna Salai Bridge, Chennai Central",
+      "disaster_type": "flood",
+      "severity": "CRITICAL",
+      "severity_score": 84.6,
+      "priority_score": 88.1,
+      "priority_level": "CRITICAL",
+      "report_count": 4,
+      "first_reported": "2026-09-12T15:25:49.983120",
+      "last_updated": "2026-09-12T16:15:01.028779",
+      "status": "ACTIVE",
+      "reports": [
+        {
+          "latitude": 13.0827,
+          "longitude": 80.2707,
+          "location_name": "Anna Salai Bridge, Chennai Central",
+          "media_type": "video",
+          "media_path": "/uploads/sample_video_flood.mp4",
+          "description": "30-second field video showing submerged vehicles and bridge structural cracking near Anna Salai.",
+          "disaster_type": "flood",
+          "id": "REP-1001",
+          "timestamp": "2026-09-12T15:25:49.983120",
+          "incident_id": null
+        },
+        {
+          "latitude": 13.0835,
+          "longitude": 80.2715,
+          "location_name": "Anna Salai Bridge, Chennai Central",
+          "media_type": "image",
+          "media_path": "/uploads/sample_image_bridge.jpg",
+          "description": "High-resolution image of submerged cars and cracked bridge pillar.",
+          "disaster_type": "flood",
+          "id": "REP-1002",
+          "timestamp": "2026-09-12T15:40:49.983120",
+          "incident_id": null
+        },
+        {
+          "latitude": 13.082,
+          "longitude": 80.2698,
+          "location_name": "Anna Salai Bridge, Chennai Central",
+          "media_type": "audio",
+          "media_path": "/uploads/sample_audio_report.mp3",
+          "description": "Voice recording from field officer reporting trapped citizens and impassable road.",
+          "disaster_type": "flood",
+          "id": "REP-1003",
+          "timestamp": "2026-09-12T15:55:49.983120",
+          "incident_id": null
+        },
+        {
+          "latitude": 13.0827,
+          "longitude": 80.2707,
+          "location_name": "Anna Salai Bridge, Chennai",
+          "media_type": "image",
+          "media_path": "/uploads/REP-172FC8.png",
+          "description": "",
+          "disaster_type": "flood",
+          "id": "REP-172FC8",
+          "timestamp": "2026-09-12T16:15:01.028779",
+          "incident_id": null
+        }
+      ],
+      "consolidated_assessment": {
+        "id": "48e4872a-ccae-420e-a431-7ab0eeef1e84",
+        "report_id": "REP-1001",
+        "damage_type": "FLOOD_AND_INFRASTRUCTURE",
+        "severity_level": "CRITICAL",
+        "severity_score": 84.6,
+        "confidence": 98.0,
+        "water_level_pct": 77.9,
+        "road_blockage_pct": 87.9,
+        "vehicle_count": 6,
+        "person_count": 4,
+        "infrastructure_damage_score": 82.8,
+        "modality_scores": [
+          {
+            "modality": "video",
+            "score": 88.5,
+            "confidence": 92.0,
+            "details": {}
+          },
+          {
+            "modality": "image",
+            "score": 84.0,
+            "confidence": 91.0,
+            "details": {}
+          },
+          {
+            "modality": "audio",
+            "score": 90.0,
+            "confidence": 84.0,
+            "details": {}
+          },
+          {
+            "modality": "image",
+            "score": 78.5,
+            "confidence": 89.0,
+            "details": {}
+          }
+        ],
+        "video_timeline": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 30.0,
+            "event_type": "flood_water",
+            "confidence": 0.95
+          },
+          {
+            "start_sec": 2.0,
+            "end_sec": 26.0,
+            "event_type": "vehicle_obstruction",
+            "confidence": 0.88
+          },
+          {
+            "start_sec": 6.0,
+            "end_sec": 30.0,
+            "event_type": "road_blockage",
+            "confidence": 0.92
+          },
+          {
+            "start_sec": 10.0,
+            "end_sec": 28.0,
+            "event_type": "infrastructure_damage",
+            "confidence": 0.86
+          },
+          {
+            "start_sec": 4.0,
+            "end_sec": 18.0,
+            "event_type": "person_detected",
+            "confidence": 0.79
+          }
+        ],
+        "transcription": "The main bridge near Anna Salai is cracking under heavy flood waters. Road is completely blocked. At least 6 vehicles are stranded and 4 people are trapped on top of cars.",
+        "extracted_entities": {
+          "event_type": "BRIDGE_COLLAPSE",
+          "road_status": "BLOCKED",
+          "location_hint": "Anna Salai Bridge",
+          "stranded_people": 4,
+          "stranded_vehicles": 6,
+          "urgency": "CRITICAL"
+        }
+      }
+    },
+    "INC-0002": {
+      "id": "INC-0002",
+      "title": "Flood Incident at T. Nagar Commercial & Residential Hub",
+      "latitude": 13.0406,
+      "longitude": 80.2339,
+      "location_name": "T. Nagar Commercial & Residential Hub",
+      "disaster_type": "flood",
+      "severity": "SEVERE",
+      "severity_score": 71.3,
+      "priority_score": 74.0,
+      "priority_level": "HIGH",
+      "report_count": 2,
+      "first_reported": "2026-09-12T14:10:49.983120",
+      "last_updated": "2026-09-12T14:30:49.983120",
+      "status": "ACTIVE",
+      "reports": [
+        {
+          "latitude": 13.04,
+          "longitude": 80.2333,
+          "location_name": "T. Nagar Commercial & Residential Hub",
+          "media_type": "image",
+          "media_path": "/uploads/sample_tnagar_flood.jpg",
+          "description": "Flooded street with waist-deep water and fallen electric power poles.",
+          "disaster_type": "flood",
+          "id": "REP-2001",
+          "timestamp": "2026-09-12T14:10:49.983120",
+          "incident_id": null
+        },
+        {
+          "latitude": 13.0412,
+          "longitude": 80.2345,
+          "location_name": "T. Nagar Commercial & Residential Hub",
+          "media_type": "video",
+          "media_path": "/uploads/sample_tnagar_video.mp4",
+          "description": "Video of rising water level affecting ground floor shops.",
+          "disaster_type": "flood",
+          "id": "REP-2002",
+          "timestamp": "2026-09-12T14:30:49.983120",
+          "incident_id": null
+        }
+      ],
+      "consolidated_assessment": {
+        "id": "c4d7f929-ce1b-41c2-b0f7-6dfe0984b8ca",
+        "report_id": "REP-2001",
+        "damage_type": "FLOOD_AND_INFRASTRUCTURE",
+        "severity_level": "SEVERE",
+        "severity_score": 71.3,
+        "confidence": 92.0,
+        "water_level_pct": 66.2,
+        "road_blockage_pct": 76.2,
+        "vehicle_count": 3,
+        "person_count": 2,
+        "infrastructure_damage_score": 62.7,
+        "modality_scores": [
+          {
+            "modality": "image",
+            "score": 72.0,
+            "confidence": 89.0,
+            "details": {}
+          },
+          {
+            "modality": "video",
+            "score": 70.5,
+            "confidence": 86.0,
+            "details": {}
+          }
+        ],
+        "video_timeline": [
+          {
+            "start_sec": 0.0,
+            "end_sec": 15.0,
+            "event_type": "flood_water",
+            "confidence": 0.9
+          },
+          {
+            "start_sec": 3.0,
+            "end_sec": 12.0,
+            "event_type": "road_blockage",
+            "confidence": 0.82
+          }
+        ],
+        "transcription": null,
+        "extracted_entities": {}
+      }
+    },
+    "INC-0003": {
+      "id": "INC-0003",
+      "title": "Flood Incident at Adyar River Bridge Approach",
+      "latitude": 13.0067,
+      "longitude": 80.2578,
+      "location_name": "Adyar River Bridge Approach",
+      "disaster_type": "flood",
+      "severity": "MODERATE",
+      "severity_score": 52.0,
+      "priority_score": 44.8,
+      "priority_level": "MODERATE",
+      "report_count": 1,
+      "first_reported": "2026-09-12T13:10:49.983120",
+      "last_updated": "2026-09-12T13:10:49.983120",
+      "status": "ACTIVE",
+      "reports": [
+        {
+          "latitude": 13.0067,
+          "longitude": 80.2578,
+          "location_name": "Adyar River Bridge Approach",
+          "media_type": "image",
+          "media_path": "/uploads/sample_adyar.jpg",
+          "description": "Knee-deep water on main road, 2 stalled hatchback cars.",
+          "disaster_type": "flood",
+          "id": "REP-3001",
+          "timestamp": "2026-09-12T13:10:49.983120",
+          "incident_id": null
+        }
+      ],
+      "consolidated_assessment": {
+        "id": "5e610a8a-3c1a-4082-b5d3-512b38d89d95",
+        "report_id": "REP-3001",
+        "damage_type": "FLOOD_WATER",
+        "severity_level": "MODERATE",
+        "severity_score": 52.0,
+        "confidence": 87.0,
+        "water_level_pct": 45.0,
+        "road_blockage_pct": 50.0,
+        "vehicle_count": 2,
+        "person_count": 0,
+        "infrastructure_damage_score": 35.0,
+        "modality_scores": [
+          {
+            "modality": "image",
+            "score": 52.0,
+            "confidence": 87.0,
+            "details": {}
+          }
+        ],
+        "video_timeline": [],
+        "transcription": null,
+        "extracted_entities": {}
+      }
+    },
+    "INC-0004": {
+      "id": "INC-0004",
+      "title": "Flood Incident at Madhavaram Canal Link Road",
+      "latitude": 13.12,
+      "longitude": 80.21,
+      "location_name": "Madhavaram Canal Link Road",
+      "disaster_type": "flood",
+      "severity": "LOW",
+      "severity_score": 28.5,
+      "priority_score": 19.7,
+      "priority_level": "LOW",
+      "report_count": 1,
+      "first_reported": "2026-09-12T12:10:49.983120",
+      "last_updated": "2026-09-12T12:10:49.983120",
+      "status": "INVESTIGATING",
+      "reports": [
+        {
+          "latitude": 13.12,
+          "longitude": 80.21,
+          "location_name": "Madhavaram Canal Link Road",
+          "media_type": "image",
+          "media_path": "/uploads/sample_madhavaram.jpg",
+          "description": "Minor canal overflow on sidewalk, main road traffic flowing slowly.",
+          "disaster_type": "flood",
+          "id": "REP-4001",
+          "timestamp": "2026-09-12T12:10:49.983120",
+          "incident_id": null
+        }
+      ],
+      "consolidated_assessment": {
+        "id": "3b1c8404-a4d2-4e28-9df8-50533f8c9e6b",
+        "report_id": "REP-4001",
+        "damage_type": "FLOOD_WATER",
+        "severity_level": "LOW",
+        "severity_score": 28.5,
+        "confidence": 85.0,
+        "water_level_pct": 25.0,
+        "road_blockage_pct": 20.0,
+        "vehicle_count": 0,
+        "person_count": 0,
+        "infrastructure_damage_score": 15.0,
+        "modality_scores": [
+          {
+            "modality": "image",
+            "score": 28.5,
+            "confidence": 85.0,
+            "details": {}
+          }
+        ],
+        "video_timeline": [],
+        "transcription": null,
+        "extracted_entities": {}
+      }
+    }
+  }
+}
